@@ -133,6 +133,11 @@ The Streamlit dashboard currently supports:
 - Displaying total detections and object categories.
 - Identifying the most frequently detected class.
 - Visualizing object distribution using Plotly charts.
+- Uploading warehouse videos for object tracking.
+- Tracking objects across frames using ByteTrack.
+- Displaying tracked-video analytics.
+- Downloading annotated tracking videos.
+- Exporting analytics as CSV files.
 
 ### Important Note
 
@@ -145,7 +150,7 @@ Detection performance can vary depending on image quality, lighting, object over
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/shreerath22-stack/WarehouseVision-AI.git
 cd WarehouseVision-AI
 ```
 
@@ -197,13 +202,19 @@ data/processed/warehouse_yolo_clean/
 
 The model and dataset must be available at their expected paths for the corresponding features to run.
 
-## 🔍 Object Tracking
+## 🎥 Object Tracking
 
-An experimental video-tracking workflow was tested using Ultralytics ByteTrack.
+WarehouseVision AI includes an integrated video-tracking workflow using Ultralytics ByteTrack.
 
-It supports tracking detected objects across video frames and associating detections with tracking IDs.
+Features:
+- Upload warehouse videos.
+- Detect and track objects across video frames.
+- Associate detections with tracking IDs where available.
+- Generate annotated tracking videos.
+- Calculate approximate unique tracked-object counts.
+- Download processed videos and analytics.
 
-Tracking is a prototype capability and should not be confused with a fully integrated dashboard feature.
+Note: Track IDs may change when objects disappear or become occluded. Counts are approximate, not verified inventory.
 
 ## ⚠️ Current Limitations
 
