@@ -1,9 +1,11 @@
 
 ultralytics
-opencv-python
+opencv-python-headless
 numpy
 pandas
 matplotlib
 Pillow
 streamlit
 scikit-learn
+plotly
+openpyxl
